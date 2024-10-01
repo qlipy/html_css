@@ -1,0 +1,55 @@
+p {
+    background-color: darkmagenta;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    background-color: blueviolet;
+}
+body    {
+    text-align: center;
+    background-color: pink;
+}
+h2  {
+    background-color: hotpink;
+    text-align: center;
+}
+textarea    {
+    text-align: center;
+}
+
+.item1 img {
+  width: 200px;
+  height: 200px;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container > div {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.flex-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  margin: 10px;
+  width: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
